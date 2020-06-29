@@ -4,6 +4,11 @@ li {
   background: #a1c763;
 }
 
+img {
+  max-width:100%;
+  height:auto;
+}
+
 .label {
   font-weight: bold;
 }
@@ -21,3 +26,4 @@ li {
 .btn-light {
   background-color: #91b1c7 !important;
 }
+

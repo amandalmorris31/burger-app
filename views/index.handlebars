@@ -1,16 +1,14 @@
-<div class="container">
+<div class="container w-100">
   <h1>Eat-Da-Delicious Burgers</h1>
 
   <!--the following card styling was taken from https://getbootstrap.com/docs/4.5/components/card/--> 
-  <div class="row">
+  <div class="row w-100">
     <div class="card">
       <div class="card-body">
-        <img src="../public/assets/img/burgers.jpg" alt="burgers photo" />
+        <img src="/assets/img/burgers.png" alt="burgers photo" />
       </div>
     </div>
-  </div>
   
-  <div class="row">
     <div class="card-group m-3">
       <div class="col-sm-6">
         <div class="card h-100">
@@ -46,34 +44,30 @@
     </div>
 
 
-  
-
-
     <div class="col-sm-12">
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Add a Burger</h4>
 
+            <form class="create-form">
 
-  <form class="create-form">
+              <div class="form-group">
+                <label for="bn">Burger Name:</label>
+                <input type="text" id="bn" name="burger_name">
+              </div>
 
-    <div class="form-group">
-      <label for="bn">Burger Name:</label>
-      <input type="text" id="bn" name="burger_name">
-    </div>
+              <div class="form-group">
+                <label for="devo">Devoured?</label><br>
+                <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+                <input type="radio" name="devoured" value="0"> Ready to be eaten
+              </div>
 
-    <div class="form-group">
-      <label for="devo">Devoured?</label><br>
-      <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-      <input type="radio" name="devoured" value="0"> Ready to be eaten
-    </div>
-
-    <button type="submit" class="btn btn-light">Add Burger</button>
-  </form>
+              <button type="submit" class="btn btn-light">Add Burger</button>
+            </form>
 
         </div>
       </div>
     </div>
-
   </div>
+</div>
 
